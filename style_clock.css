@@ -1,0 +1,219 @@
+/*
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#myLabel{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 8em;
+}
+
+#rollBtn{
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 4em;
+    border-radius: 20px;
+    background-color: hsl(208, 82%, 63%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#rollBtn:hover{
+    background-color: hsl(208, 49%, 50%);
+}
+*/
+
+/*
+
+#Age Checker
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.mySubmit{
+    font-size: 0.85em;
+    padding: 8px 16px;
+}
+
+*/
+
+/*
+
+#Temperature Converter
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#myh1{
+    font-family: Lilita One;
+    font-size: 3em;
+    color:hsl(251, 100%, 24%)
+}
+
+#myinput{
+    font-family: DynaPuff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 2em;
+    border-radius: 25px;
+}
+
+#CF{
+    transform: scale(1.5);
+}
+
+#FC{
+    transform: scale(1.5);
+}
+
+#labelCF{
+    font-family:Titan One;
+    font-size: 2em;
+}
+
+#labelFC{
+    font-family:Titan One;
+    font-size: 2em;
+}
+
+#myresult{
+    font-size: 2em;
+    font-family: DynaPuff;
+}
+
+#mydiv{
+    margin: auto;
+    width: 520px;
+    padding: 50px 50px;
+    background-color: rgb(232, 244, 255);
+    box-shadow: 5px 5px 50px;
+    border-radius: 25px;
+}
+
+#mybtn{
+    transform: scale(1.5);
+    border-radius: 100px;
+    padding: 5px 10px;
+    background-color: hsl(208, 100%, 50%);
+    color: hsl(251, 100%, 24%);
+    font-family: Titan One;
+}
+
+#mybtn:hover{
+    background-color:hsl(208, 100%, 45%);
+    transition: 0.25s;
+}
+*/
+
+body.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.fade.loaded {
+  opacity: 1;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    opacity: 1;
+}
+.navbar {
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: auto;
+    top: 40px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+    background-color: transparent;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a{
+    font-weight: bold;
+    text-shadow: 0px 0px 25px hsl(0, 0%, 100%);
+    margin: 5px;
+    border-radius: 25px;
+    font-family: Lexend;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.35s ease;
+    
+
+}
+
+#clockh{
+    background-color: hsla(0, 0%, 90%, 0.048) ;
+}
+
+#clockh:hover{
+    background-color: hsla(0, 0%, 90%, 0.137);
+}
+
+.navbar a:hover{
+    background-color: hsla(0, 0%, 90%, 0.137);
+}
+
+.navbar li{
+    margin: 0 10px;
+}
+
+
+
+.background-video {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+
+
+
+#clock-container{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+#clock{
+    display: flex;
+    font-family: Titan One;
+    color: #ff00ff; /* Neon Cyan */
+    text-shadow: 0 0 2px #ff00ff, 0 0 20px #ff00ff;
+    font-size: 13em;
+}

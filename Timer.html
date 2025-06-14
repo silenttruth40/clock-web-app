@@ -1,0 +1,49 @@
+<html>
+<!DOCTYPE html>
+<html style="background-color: #000;" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="style_timer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Chango&family=DM+Serif+Text:ital@0;1&family=DynaPuff:wght@400..700&family=La+Belle+Aurore&family=Lexend:wght@100..900&family=Lilita+One&family=Meow+Script&family=Rubik+Glitch&family=Tilt+Prism&family=Titan+One&family=Yatra+One&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/10846f8cb7.js" crossorigin="anonymous"></script>
+</head>
+<body class="fade">
+    <nav class="navbar">
+    <ul>
+      <li><a id = "clockh" href="CLOCK.html" onclick="fadeTo(event, 'CLOCK.html')">DIGITAL CLOCK</a></li>
+      <a id = "stopwatchh" href="Stopwatch.html" onclick="fadeTo(event, 'Stopwatch.html')">STOPWATCH</a>
+      <a id = "timerh" href="Timer.html" onclick="fadeTo(event, 'Timer.html')">TIMER</a>
+    </ul>
+  </nav>
+
+  <video autoplay muted loop class="background-video" preload="auto">
+    <source src="spider-man-logo.3840x2160.mp4" type="video/mp4" />
+  </video>
+
+  <div id = "container">
+    <div id = "display">
+    </div>
+    
+    <input type="number" id="inputSeconds" placeholder="Enter seconds" >
+
+    <div id = "controls">
+        <button id = "startBtn" onclick="start()">
+            <i class="fa-solid fa-play"></i>
+        </button>
+
+        <button id = "stopBtn" onclick="stop()">
+            <i class="fa-solid fa-pause"></i>
+        </button>
+
+        <button id = "resetBtn" onclick="reset()">
+            <i class="fa-solid fa-rotate-right"></i>
+        </button>
+
+    </div>
+  </div>
+  <script src="index_3.js"></script>
+</body>

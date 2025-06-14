@@ -1,0 +1,196 @@
+body.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.fade.loaded {
+  opacity: 1;
+}
+
+body{
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.navbar {
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: auto;
+    top: 40px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+    background-color: transparent;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a{
+    font-weight: bold;
+    text-shadow: 0px 0px 25px hsl(0, 0%, 100%);
+    margin: 5px;
+    border-radius: 25px;
+    font-family: Lexend;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.35s ease;
+    
+
+}
+
+.navbar a:hover{
+    background-color: hsla(0, 0%, 90%, 0.137);
+}
+
+.navbar li{
+    margin: 0 10px;
+}
+
+.background-video {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+#timerh{
+    background-color: hsla(0, 0%, 90%, 0.048)
+}
+
+#timerh:hover{
+    background-color: hsla(0, 0%, 90%, 0.137);
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+#display{
+    display: flex;
+    font-family: Titan One;
+    color: #ff00ff; /* Neon Cyan */
+    text-shadow: 0 0 2px #ff00ff, 0 0 20px #ff00ff;
+    font-size: 13em;
+}
+
+#startBtn{
+    padding: 30px;
+    padding-top: 35px;
+    padding-left: 40px;
+    border-radius: 1000px;
+    width: 160px;
+    font-size: 5em;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    color: #00d4ff; /* Neon Cyan */
+    text-shadow: 0px 0px 5px #00d4ff, 0 0 20px #00d4ff;
+    transition: background-color 0.35s ease;
+}
+
+#startBtn:hover{
+    background-color: rgba(0, 0, 0, 0.534);
+    backdrop-filter: blur(5px);
+    color: #00d4ff; /* Neon Cyan */
+    text-shadow: 0px 0px 5px #00d4ff, 0 0 20px #00d4ff;
+}
+
+#stopBtn{
+    padding: 30px;
+    border-radius: 1000px;
+    width: 160px;
+    font-size: 5em;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    color: #00d4ff; /* Neon Cyan */
+    text-shadow: 0 0 5px #00d4ff, 0 0 20px #00d4ff;
+    transition: background-color 0.35s ease;
+}
+
+#stopBtn:hover{
+    background-color: rgba(0, 0, 0, 0.534);
+    backdrop-filter: blur(5px);
+    color: #00d4ff; /* Neon Cyan */
+    text-shadow: 0 0 5px #00d4ff, 0 0 20px #00d4ff;
+}
+
+#resetBtn{
+    padding: 30px;
+    border-radius: 1000px;
+    width: 160px;
+    font-size: 5em;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    color: #00d4ff; /* Neon Cyan */
+    text-shadow: 0 0 5px #00d4ff, 0 0 20px #00d4ff;
+    transition: background-color 0.35s ease;
+}
+
+#resetBtn:hover{
+    background-color: rgba(0, 0, 0, 0.534);
+    backdrop-filter: blur(5px);
+    color: #00d4ff; /* Neon Cyan */
+    text-shadow: 0 0 5px #00d4ff, 0 0 20px #00d4ff;
+}
+
+#inputSeconds {
+  font-family: Titan One;
+  padding: 20px 30px;
+  font-size: 4em;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.07);
+  color: #00ffff;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 40px rgba(0, 255, 255, 0.2);
+  outline: none;
+  margin-bottom: 40px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#inputSeconds::placeholder {
+  color: rgba(0, 255, 255, 0.5);
+  font-size: 0.8em;
+}
+
+#inputSeconds:focus {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 50px rgba(0, 255, 255, 0.3);
+}
+
+#inputSeconds::-webkit-inner-spin-button,
+#inputSeconds::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
